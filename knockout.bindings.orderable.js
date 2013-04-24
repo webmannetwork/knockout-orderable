@@ -3,6 +3,9 @@
         if (typeof left === 'string' || typeof right === 'string') {
             return left.localeCompare(right);
         }
+		else{ //for sorting numbers
+			return Number(left) - Number(right);
+		}
         if (left > right)
             return 1;
 
